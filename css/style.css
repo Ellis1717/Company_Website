@@ -223,7 +223,11 @@ a:focus {
 }
 
 .slider_section .img-box img {
-  width: 100%;
+    height: auto;
+    max-height: 500px;
+    width: 100%;
+    max-width: 750px;
+    offset-position: right;
 }
 
 .slider_section .slider_bg-container {
