@@ -66,11 +66,13 @@ body {
 .header_section {
   background-color: #1e025b;
   padding: 10px 0;
+  
 }
 
 .header_section .container-fluid {
   padding-right: 25px;
   padding-left: 25px;
+  
 }
 
 .header_section .nav_container {
@@ -833,6 +835,9 @@ body. html {
     height: 100%;
 }
 
+
+/* the following section allows for us to lock the picutre 
+    behind and then on the next section start new and begin scrolling */
 .parallax {
     background-image: url("img_parallax.jpg");
     min-height: 100%;
