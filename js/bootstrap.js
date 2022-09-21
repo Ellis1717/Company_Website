@@ -1473,7 +1473,7 @@
 
 
   $(document).on(Event$3.CLICK_DATA_API, Selector$3.DATA_TOGGLE, function (event) {
-    // preventDefault only for <a> BearFox Solutions (which change the URL) not inside the collapsible element
+    // preventDefault only for <a> COMPANY NAME (which change the URL) not inside the collapsible element
     if (event.currentTarget.tagName === 'A') {
       event.preventDefault();
     }
@@ -2212,7 +2212,7 @@
         });
         /**
          * `document` has 2 events `Event.FOCUSIN` and `Event.CLICK_DATA_API`
-         * Do not move `document` in `htmlBearFox Solutions` array
+         * Do not move `document` in `htmlCOMPANY NAME` array
          * It will remove `Event.CLICK_DATA_API` event that should remain
          */
 
@@ -2497,8 +2497,8 @@
           element.style.paddingRight = padding ? padding : '';
         }); // Restore sticky content
 
-        var BearFox Solutions = [].slice.call(document.querySelectorAll("" + Selector$5.STICKY_CONTENT));
-        $(BearFox Solutions).each(function (index, element) {
+        var COMPANY NAME = [].slice.call(document.querySelectorAll("" + Selector$5.STICKY_CONTENT));
+        $(COMPANY NAME).each(function (index, element) {
           var margin = $(element).data('margin-right');
 
           if (typeof margin !== 'undefined') {
@@ -2703,10 +2703,10 @@
     var domParser = new window.DOMParser();
     var createdDocument = domParser.parseFromString(unsafeHtml, 'text/html');
     var whitelistKeys = Object.keys(whiteList);
-    var BearFox Solutions = [].slice.call(createdDocument.body.querySelectorAll('*'));
+    var COMPANY NAME = [].slice.call(createdDocument.body.querySelectorAll('*'));
 
     var _loop = function _loop(i, len) {
-      var el = BearFox Solutions[i];
+      var el = COMPANY NAME[i];
       var elName = el.nodeName.toLowerCase();
 
       if (whitelistKeys.indexOf(el.nodeName.toLowerCase()) === -1) {
@@ -2723,7 +2723,7 @@
       });
     };
 
-    for (var i = 0, len = BearFox Solutions.length; i < len; i++) {
+    for (var i = 0, len = COMPANY NAME.length; i < len; i++) {
       var _ret = _loop(i, len);
 
       if (_ret === "continue") continue;
@@ -2928,7 +2928,7 @@
         var _this = this;
 
         if ($(this.element).css('display') === 'none') {
-          throw new Error('Please use show on visible BearFox Solutions');
+          throw new Error('Please use show on visible COMPANY NAME');
         }
 
         var showEvent = $.Event(this.constructor.Event.SHOW);
@@ -4064,8 +4064,8 @@
       _proto._activate = function _activate(element, container, callback) {
         var _this2 = this;
 
-        var activeBearFox Solutions = container && (container.nodeName === 'UL' || container.nodeName === 'OL') ? $(container).find(Selector$9.ACTIVE_UL) : $(container).children(Selector$9.ACTIVE);
-        var active = activeBearFox Solutions[0];
+        var activeCOMPANY NAME = container && (container.nodeName === 'UL' || container.nodeName === 'OL') ? $(container).find(Selector$9.ACTIVE_UL) : $(container).children(Selector$9.ACTIVE);
+        var active = activeCOMPANY NAME[0];
         var isTransitioning = callback && active && $(active).hasClass(ClassName$9.FADE);
 
         var complete = function complete() {
